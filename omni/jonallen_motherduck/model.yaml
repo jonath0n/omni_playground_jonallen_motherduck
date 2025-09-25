@@ -1,1 +1,3 @@
+default_numeric_locale: fr_FR
+
 included_views: [ "*" ]
