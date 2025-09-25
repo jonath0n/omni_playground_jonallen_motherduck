@@ -1,0 +1,20 @@
+# Reference this view as main__person_addresstype
+schema: main
+table_name: person_addresstype
+
+dimensions:
+  rowguid: {}
+
+  address_type_id:
+    sql: '"AddressTypeID"'
+    format: ID
+
+  name:
+    sql: '"Name"'
+
+  modified_date:
+    sql: '"ModifiedDate"'
+
+measures:
+  count:
+    aggregate_type: count

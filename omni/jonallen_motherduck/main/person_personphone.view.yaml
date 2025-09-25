@@ -1,0 +1,22 @@
+# Reference this view as main__person_personphone
+schema: main
+table_name: person_personphone
+
+dimensions:
+  business_entity_id:
+    sql: '"BusinessEntityID"'
+    format: ID
+
+  phone_number:
+    sql: '"PhoneNumber"'
+
+  phone_number_type_id:
+    sql: '"PhoneNumberTypeID"'
+    format: ID
+
+  modified_date:
+    sql: '"ModifiedDate"'
+
+measures:
+  count:
+    aggregate_type: count

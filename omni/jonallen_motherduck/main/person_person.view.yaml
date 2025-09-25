@@ -1,0 +1,47 @@
+# Reference this view as main__person_person
+schema: main
+table_name: person_person
+
+dimensions:
+  rowguid: {}
+
+  business_entity_id:
+    sql: '"BusinessEntityID"'
+    format: ID
+
+  person_type:
+    sql: '"PersonType"'
+
+  name_style:
+    sql: '"NameStyle"'
+
+  title:
+    sql: '"Title"'
+
+  first_name:
+    sql: '"FirstName"'
+
+  middle_name:
+    sql: '"MiddleName"'
+
+  last_name:
+    sql: '"LastName"'
+
+  suffix:
+    sql: '"Suffix"'
+
+  email_promotion:
+    sql: '"EmailPromotion"'
+
+  additional_contact_info:
+    sql: '"AdditionalContactInfo"'
+
+  demographics:
+    sql: '"Demographics"'
+
+  modified_date:
+    sql: '"ModifiedDate"'
+
+measures:
+  count:
+    aggregate_type: count

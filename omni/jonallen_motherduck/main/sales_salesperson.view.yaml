@@ -1,0 +1,36 @@
+# Reference this view as main__sales_salesperson
+schema: main
+table_name: sales_salesperson
+
+dimensions:
+  rowguid: {}
+
+  business_entity_id:
+    sql: '"BusinessEntityID"'
+    format: ID
+
+  territory_id:
+    sql: '"TerritoryID"'
+    format: ID
+
+  sales_quota:
+    sql: '"SalesQuota"'
+
+  bonus:
+    sql: '"Bonus"'
+
+  commission_pct:
+    sql: '"CommissionPct"'
+
+  sales_ytd:
+    sql: '"SalesYTD"'
+
+  sales_last_year:
+    sql: '"SalesLastYear"'
+
+  modified_date:
+    sql: '"ModifiedDate"'
+
+measures:
+  count:
+    aggregate_type: count

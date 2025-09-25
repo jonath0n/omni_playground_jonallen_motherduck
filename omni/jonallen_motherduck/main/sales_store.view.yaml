@@ -1,0 +1,27 @@
+# Reference this view as main__sales_store
+schema: main
+table_name: sales_store
+
+dimensions:
+  rowguid: {}
+
+  business_entity_id:
+    sql: '"BusinessEntityID"'
+    format: ID
+
+  name:
+    sql: '"Name"'
+
+  sales_person_id:
+    sql: '"SalesPersonID"'
+    format: ID
+
+  demographics:
+    sql: '"Demographics"'
+
+  modified_date:
+    sql: '"ModifiedDate"'
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,17 @@
+# Reference this view as main__person_countryregion
+schema: main
+table_name: person_countryregion
+
+dimensions:
+  country_region_code:
+    sql: '"CountryRegionCode"'
+
+  name:
+    sql: '"Name"'
+
+  modified_date:
+    sql: '"ModifiedDate"'
+
+measures:
+  count:
+    aggregate_type: count

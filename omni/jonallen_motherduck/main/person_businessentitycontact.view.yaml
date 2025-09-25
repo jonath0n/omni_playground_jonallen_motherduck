@@ -1,0 +1,25 @@
+# Reference this view as main__person_businessentitycontact
+schema: main
+table_name: person_businessentitycontact
+
+dimensions:
+  rowguid: {}
+
+  business_entity_id:
+    sql: '"BusinessEntityID"'
+    format: ID
+
+  person_id:
+    sql: '"PersonID"'
+    format: ID
+
+  contact_type_id:
+    sql: '"ContactTypeID"'
+    format: ID
+
+  modified_date:
+    sql: '"ModifiedDate"'
+
+measures:
+  count:
+    aggregate_type: count

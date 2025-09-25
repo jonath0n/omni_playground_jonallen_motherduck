@@ -1,0 +1,18 @@
+# Reference this view as main__person_contacttype
+schema: main
+table_name: person_contacttype
+
+dimensions:
+  contact_type_id:
+    sql: '"ContactTypeID"'
+    format: ID
+
+  name:
+    sql: '"Name"'
+
+  modified_date:
+    sql: '"ModifiedDate"'
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,17 @@
+# Reference this view as main__person_businessentity
+schema: main
+table_name: person_businessentity
+
+dimensions:
+  rowguid: {}
+
+  business_entity_id:
+    sql: '"BusinessEntityID"'
+    format: ID
+
+  modified_date:
+    sql: '"ModifiedDate"'
+
+measures:
+  count:
+    aggregate_type: count

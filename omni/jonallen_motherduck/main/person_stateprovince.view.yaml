@@ -1,0 +1,33 @@
+# Reference this view as main__person_stateprovince
+schema: main
+table_name: person_stateprovince
+
+dimensions:
+  rowguid: {}
+
+  state_province_id:
+    sql: '"StateProvinceID"'
+    format: ID
+
+  state_province_code:
+    sql: '"StateProvinceCode"'
+
+  country_region_code:
+    sql: '"CountryRegionCode"'
+
+  is_only_state_province_flag:
+    sql: '"IsOnlyStateProvinceFlag"'
+
+  name:
+    sql: '"Name"'
+
+  territory_id:
+    sql: '"TerritoryID"'
+    format: ID
+
+  modified_date:
+    sql: '"ModifiedDate"'
+
+measures:
+  count:
+    aggregate_type: count

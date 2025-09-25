@@ -1,0 +1,29 @@
+# Reference this view as main__shopping_cart_items
+schema: main
+table_name: shopping_cart_items
+
+dimensions:
+  shopping_cart_item_id:
+    sql: '"ShoppingCartItemID"'
+    format: ID
+
+  shopping_cart_id:
+    sql: '"ShoppingCartID"'
+    format: ID
+
+  quantity:
+    sql: '"Quantity"'
+
+  product_id:
+    sql: '"ProductID"'
+    format: ID
+
+  date_created:
+    sql: '"DateCreated"'
+
+  modified_date:
+    sql: '"ModifiedDate"'
+
+measures:
+  count:
+    aggregate_type: count

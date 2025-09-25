@@ -1,0 +1,24 @@
+# Reference this view as main__person_emailaddress
+schema: main
+table_name: person_emailaddress
+
+dimensions:
+  rowguid: {}
+
+  business_entity_id:
+    sql: '"BusinessEntityID"'
+    format: ID
+
+  email_address_id:
+    sql: '"EmailAddressID"'
+    format: ID
+
+  email_address:
+    sql: '"EmailAddress"'
+
+  modified_date:
+    sql: '"ModifiedDate"'
+
+measures:
+  count:
+    aggregate_type: count
