@@ -16,10 +16,7 @@ dimensions:
   contact_type_id:
     sql: '"ContactTypeID"'
     format: ID
+    hidden: true
 
   modified_date:
     sql: '"ModifiedDate"'
-
-measures:
-  count:
-    aggregate_type: count

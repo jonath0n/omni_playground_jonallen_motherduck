@@ -1,1 +1,7 @@
-[]
+- join_from_view: main__person_businessentitycontact
+  join_to_view: main__person_contacttype
+  id: person_businessentitycontact_person_contacttype
+  join_type: always_left
+  on_sql: ${main__person_businessentitycontact.contact_type_id} =
+    ${main__person_contacttype.contact_type_id}
+  relationship_type: many_to_one

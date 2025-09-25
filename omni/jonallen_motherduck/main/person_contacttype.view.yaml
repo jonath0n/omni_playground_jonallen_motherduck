@@ -6,12 +6,16 @@ dimensions:
   contact_type_id:
     sql: '"ContactTypeID"'
     format: ID
+    hidden: true
+    primary_key: true
 
   name:
     sql: '"Name"'
+    label: Contact Type
 
   modified_date:
     sql: '"ModifiedDate"'
+    hidden: true
 
 measures:
   count:
